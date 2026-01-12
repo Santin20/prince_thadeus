@@ -94,7 +94,7 @@ body {
   background-color: aqua;
  
   background-position:left,right;
-  background-size: 900px 900px,cover;
+  background-size: 10px 900px,cover;
   display: flex;
   margin: 0;
   padding: 0;
@@ -102,5 +102,6 @@ body {
   width: 100%;
     overflow: hidden;   
 }
+
 
 
