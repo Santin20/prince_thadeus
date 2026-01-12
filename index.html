@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HAPPY BIRTHDAY</title>
+    <link rel="stylesheet" href="gift.css">
+</head>
+<body>
+    <div class="coll"><button onclick="window.location.href='photo.html'">PHOTO COLLAGE</button> </div>
+    <div CLASS="txt">
+        
+    <h1>   HAPPY BIRTHDAY   </h1></div>
+    <div class="bday"><h3>💜❤️‍🔥🧡HAPPY BIRTHDAY APPA🧡💙💚HAPPY 5️⃣5️⃣ APPA❤️🤍❤️HAPPY BIRTHDAY APPA🧡🤍💚</h3></div>
+    <div class="qr"><img src="qrcode.png"><h4>SCAN </h4></div> </div>
+</body>
+
+<script>
+var word=['❤️','🎂','🎈','💕','🩷','💛','💚','💙','🧡','🩶','🖤','🤎','💜','🩵','🩶','🤍','💖','❤️‍🔥','5️⃣5️⃣'];
+for (let i = 0; i < 150; i++) {
+
+  const text = document.createElement("div");
+  text.className = "textrun";
+    text.style.left = Math.random() * 100 + "%";
+  text.style.top  = Math.random() * 100 + "%";
+  
+  text.innerText = word[Math.floor(Math.random()* word.length)];
+
+  // random delay so they don't move together
+  text.style.animationDelay = (Math.random() * 10) + "s";
+  text.style.position=(Math.random()*10) 
+  document.body.appendChild(text);
+  
+}
+</script>
+</html>

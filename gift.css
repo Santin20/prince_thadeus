@@ -1,0 +1,104 @@
+.textrun {
+  position: absolute;
+  top: 20%;
+  left: 10%;
+  transform: translate(-50%, -50%);
+  color: yellow;
+  font-size: 26px;
+  font-weight: bold;
+  white-space: nowrap;
+  animation: move3d 3s linear infinite;
+}
+
+@keyframes move3d {
+  0% {
+    transform: translateY(0) translateX(200) rotateX(0deg);
+  
+    opacity: 1;
+  }
+  50% {
+    transform: rotateX(360deg);
+    opacity:1;
+  }
+
+  100% {
+    transform: translate(50%, 50%) translateY(600px) rotateX(360deg) ;
+    
+    opacity: 1;
+  }
+}
+.coll button{
+  background-color: rgb(15, 244, 31);
+  color: rgb(248, 252, 13);
+  border-radius: 30%;
+  height: 60px;
+  font-size: 40px;
+  font-family: cursive;
+  background-image: url("but.jpg");
+  background-size: cover;
+
+}
+.qr img{
+  position: absolute;
+  top:10%;
+  left:45%;
+  height: 20%;
+
+
+}
+
+.qr h4{
+  position:absolute ;
+  top: 25%;
+  left: 47%;
+font-size: 30px;
+color: white;
+font-family:'Segoe UI'}
+
+.txt {
+  position: fixed;
+  background-color: rgb(96, 11, 102);
+  top: 35%;
+
+  left: 18%;
+  display: flex;
+  align-items: center;
+  color: rgb(255, 221, 0);
+  height: 200px;
+
+  background-image: url("appa.jpeg");
+  background-size: cover;
+  border-radius: 40%;
+  background-repeat: no-repeat;
+ 
+}
+
+.bday {
+  color: rgb(253, 60, 2);
+  animation: bday 10s linear infinite;
+  position: absolute;
+}
+
+@keyframes bday {
+  from {
+    transform: translateY(1000%) rotateX(360deg) rotateY(360deg);
+  }
+  to {
+    transform: translateY(0%);
+  }
+}
+
+body {
+  background-image: url("unnamed.jpg"),url("back image.png");
+  background-repeat: no-repeat;
+  background-color: aqua;
+ 
+  background-position:left,right;
+  background-size: 833px 900px,contain;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  width: 100%;
+    overflow: hidden;   
+}
